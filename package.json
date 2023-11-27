@@ -1,0 +1,32 @@
+{
+  "name": "storm",
+  "version": "1.0.0",
+  "description": "Proyecto formativo SENA - ADSO",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GPS-Storm/Proyecto.git"
+  },
+  "keywords": [
+    "gps",
+    "storm",
+    "SENA",
+    "ADSO",
+    "geolocalización",
+    "rutas"
+  ],
+  "author": "JeimyPinto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GPS-Storm/Proyecto/issues"
+  },
+  "homepage": "https://github.com/GPS-Storm/Proyecto#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security"
+  }
+}
