@@ -147,3 +147,9 @@ body{
     color: #fff;
     font-size: 18px;
 }
+
+.chech{
+    display: flex;
+    justify-content: space-between;
+    
+}
