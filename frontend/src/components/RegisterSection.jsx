@@ -1,4 +1,4 @@
-import { Button } from './Button.jsx';
+import { Link } from 'react-router-dom';
 import imgCell from '../assets/cell-img.png';
 
 export function RegisterSection() {
@@ -7,8 +7,9 @@ export function RegisterSection() {
             <h1 className="text-4xl font-bold mb-4">Storm GPS</h1>
             <img src={imgCell} alt="" className='w-72' />
             <h2 className="text-lg text-stone-900 mb-8"><strong>Seguridad</strong> en cada viaje de sus hijos</h2>
-
-            <Button text="Registrarse" />
+            <Link to="/register">
+                <button className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold rounded p-3 px-8">Registrate</button>
+            </Link>
         </div>
     );
 }

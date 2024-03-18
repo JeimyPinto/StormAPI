@@ -1,4 +1,3 @@
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
 export function LoginSection() {
@@ -18,7 +17,7 @@ export function LoginSection() {
                     <a href="#" className="text-orange-600">¿Olvidaste tu contraseña?</a>
                 </div>
                 <Link to="/Dashboard" className="flex flex-col">
-                        <Button text="Iniciar sesión" />
+                <button className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold rounded p-4">Iniciar Sesión</button>
                 </Link>
             </form>
         </div>
