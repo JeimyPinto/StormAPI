@@ -1,0 +1,6 @@
+# Ignorar archivos del directorio backend
+/backend/node_modules/*
+
+
+# Ignorar archivos del directorio frontend
+/frontend/node_modules/*
