@@ -1,19 +1,22 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.disable('x-powered-by');
 
-app.listen(PORT, () => console.log(`Server escuchado en el puerto http://localhost:${PORT}`));
-
-//Middlewares 
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
-
-//importar rutas
-import { Router } from 'express';
-const router = Router();
-router.get('/', (req, res) => {
-    res.send('Hello World!');
+app.use((req, res, next) => {
+    console.log('middeleware');
+    next();
 });
-export default app;
+
+app.get('/', (req, res) => {
+    res.json({ message: 'Hello World' });
+});
+
+app.use((req, res) => {
+    res.status(404).json({ message: 'Route not found' });
+});
+
+app.listen(PORT, () => {
+    console.log('Server listening on port http://localhost:' + PORT);
+});

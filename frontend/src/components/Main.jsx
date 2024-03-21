@@ -5,7 +5,7 @@ export function Main() {
     return (
         <>
             <Header />
-            <Section />
+            <Section/>
         </>
     );
 }
